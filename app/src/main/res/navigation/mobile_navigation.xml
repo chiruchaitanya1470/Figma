@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_consultant"
+        android:name="com.example.figma.ui.consultant.consultantFragment"
+        android:label="consultant"
+        tools:layout="@layout/fragment_consultant" />
+
+
+    <fragment
+        android:id="@+id/nav_home"
+    android:name="com.example.figma.ui.home.HomeFragment"
+    android:label="@string/menu_home"
+    tools:layout="@layout/fragment_home" />
+
+
+    <fragment
+        android:id="@+id/nav_appointments"
+        android:name="com.example.figma.ui.appointments.appointmentsFragment"
+        android:label="appointements"
+        tools:layout="@layout/fragment_appointments"/>
+    <fragment
+        android:id="@+id/nav_records"
+        android:name="com.example.figma.ui.records.recordsFragment"
+        android:label="records"
+        tools:layout="@layout/fragment_records" />
+    <fragment
+        android:id="@+id/nav_myfamily"
+        android:name="com.example.figma.ui.myFamily.myfamilyFragent"
+        android:label="myFamily"
+        tools:layout="@layout/fragment_myfamily"/>
+    <activity
+        android:id="@+id/nav_help"
+        android:name="com.example.figma.ui.helpcenter.help"
+        android:label="help"
+        tools:layout="@layout/activity_help"/>
+</navigation>
