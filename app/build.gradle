@@ -29,6 +29,7 @@ android {
     buildFeatures {
         viewBinding true
     }
+    buildToolsVersion '32.0.0'
 }
 
 dependencies {
@@ -42,7 +43,7 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui:2.5.3'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     // Import the BoM for the Firebase platform
-    implementation platform('com.google.firebase:firebase-bom:31.0.3')
+    implementation platform('com.google.firebase:firebase-bom:31.1.0')
     implementation 'com.google.firebase:firebase-analytics'
     implementation 'com.google.firebase:firebase-auth:21.1.0'
     implementation files('libs\\ojdbc6.jar')

@@ -11,13 +11,15 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
+
 import java.sql.*;
 
 public class details_page extends AppCompatActivity {
     Button countinue;
     TextView dbtext;
     public static String driver="oracle.jdbc.driver.OracleDriver";
-    static String url="jdbc:oracle:thin:@192.168.1.198:1521:xe";
+    static String url="jdbc:oracle:thin:@192.168.1.6:1521:xe";
     public static String user="hr";
     static String password="manager";
     public static Connection connection;
@@ -66,8 +68,8 @@ public class details_page extends AppCompatActivity {
              dbtext.setText(e.getMessage());
 
          }
-      /*   Intent nagivation=new Intent(getApplicationContext(),nagavation_drawer.class);
-         startActivity(nagivation);*/
+         Intent nagivation=new Intent(getApplicationContext(),nagavation_drawer.class);
+         startActivity(nagivation);
 
      });
     }
