@@ -15,7 +15,7 @@
     <string name="Last_name">Last name</string>
     <string name="email">Email id</string>
     <string name="dob">DD/MM/YYYY</string>
-    <string name="contuin">Continue</string>
+    <string name="continue_">Continue</string>
     <string name="male">MALE</string>
     <string name="female">FEMALE</string>
     <string name="others">OTHERS</string>

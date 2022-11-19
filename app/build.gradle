@@ -45,10 +45,16 @@ dependencies {
     implementation platform('com.google.firebase:firebase-bom:31.0.3')
     implementation 'com.google.firebase:firebase-analytics'
     implementation 'com.google.firebase:firebase-auth:21.1.0'
+    implementation files('libs\\ojdbc6.jar')
+
+
     // implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
    // implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
    // implementation 'androidx.navigation:navigation-fragment:2.3.5'
    // implementation 'androidx.navigation:navigation-ui:2.3.5'
     testImplementation 'junit:junit:4.13.2'
+
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+    implementation 'com.intuit.ssp:ssp-android:1.1.0'
 
 }

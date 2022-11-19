@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -29,6 +30,8 @@ import java.util.concurrent.TimeUnit;
 
 
 public class otp_page<mCallback> extends AppCompatActivity {
+    public static String prefs_name="myprefsfiles";
+
     Button proceed, resend;
     EditText digit1, digit2, digit3, digit4, digit5, digit6;
     String verification;
@@ -255,7 +258,11 @@ public class otp_page<mCallback> extends AppCompatActivity {
                                     @Override
                                     public void onComplete(@NonNull Task<AuthResult> task) {
                                         if(task.isSuccessful()){
-                                            Intent details = new Intent(getApplicationContext(), details_page.class);
+                                            SharedPreferences sharedPreferences=getSharedPreferences(otp_page.prefs_name,0);
+                                            SharedPreferences.Editor editor=sharedPreferences.edit();
+                                            editor.putBoolean("hasLoggined",true);
+                                            editor.commit();
+                                            Intent details = new Intent(otp_page.this, details_page.class);
                                             startActivity(details);
                                         }else{
                                             Toast.makeText(getApplicationContext(),"enter the correct otp",Toast.LENGTH_SHORT).show();

@@ -38,9 +38,12 @@ public class MainActivity extends AppCompatActivity {
 
         login = (Button) findViewById(R.id.login);
         number = (EditText) findViewById(R.id.number);
+
         mAuth=FirebaseAuth.getInstance();
         loginAction();
     }
+
+
 
     void loginAction() {
         login.setOnClickListener(new View.OnClickListener() {
@@ -53,16 +56,8 @@ public class MainActivity extends AppCompatActivity {
                 }else{
                     numbe=number.getText().toString().trim();
                     verification(numbe);
-
-
-
                 }
-
-
-
             }
-
-
         });
         mCallback=new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
             @Override
@@ -94,7 +89,6 @@ public class MainActivity extends AppCompatActivity {
                 .setCallbacks(mCallback)          // OnVerificationStateChangedCallbacks
                 .build();
         PhoneAuthProvider.verifyPhoneNumber(options);
-
     }
    /* void sendotp() {
         mCallbacks = new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {

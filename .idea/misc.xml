@@ -3,10 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/chaithu/AndroidStudioProjects/figma/app/src/main/res/drawable/background_splash.xml" value="0.149" />
+        <entry key="..\:/Users/chaithu/AndroidStudioProjects/figma/app/src/main/res/drawable/button_back_ground.xml" value="0.149" />
         <entry key="..\:/Users/chaithu/AndroidStudioProjects/figma/app/src/main/res/layout/activity_details_page.xml" value="0.23333333333333334" />
         <entry key="..\:/Users/chaithu/AndroidStudioProjects/figma/app/src/main/res/layout/activity_help.xml" value="0.23333333333333334" />
         <entry key="..\:/Users/chaithu/AndroidStudioProjects/figma/app/src/main/res/layout/activity_main.xml" value="0.23333333333333334" />
         <entry key="..\:/Users/chaithu/AndroidStudioProjects/figma/app/src/main/res/layout/activity_otp_page.xml" value="0.23333333333333334" />
+        <entry key="..\:/Users/chaithu/AndroidStudioProjects/figma/app/src/main/res/layout/activity_splash.xml" value="0.25" />
         <entry key="..\:/Users/chaithu/AndroidStudioProjects/figma/app/src/main/res/layout/app_bar_nagavation_drawer.xml" value="0.23333333333333334" />
         <entry key="..\:/Users/chaithu/AndroidStudioProjects/figma/app/src/main/res/layout/content_nagavation_drawer.xml" value="0.23333333333333334" />
       </map>

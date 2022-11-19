@@ -1,80 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical"
     tools:context=".MainActivity">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="60sp"
-        android:text="@string/Welcome_Back"
-        android:textColor="#ACACAC"
-        android:textSize="20sp"
-        android:textStyle="bold" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="544dp"
-        android:layout_height="241dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="45sp"
-        android:layout_marginEnd="20sp"
-        app:srcCompat="@drawable/img" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40sp"
-        android:layout_marginTop="70sp"
-        android:text="@string/login"
-        android:textColor="#1300f7"
-        android:textSize="25sp"
-        android:textStyle="bold" />
-
-    <EditText
-        android:id="@+id/number"
-        android:layout_width="303dp"
-        android:layout_height="49dp"
-        android:layout_marginLeft="40sp"
-        android:layout_marginTop="25sp"
-        android:layout_marginRight="80sp"
-        android:background="@drawable/button_back_ground"
-        android:hint="@string/your_phon_number"
-
-        android:inputType="number"
-        android:maxLength="10"
-        android:paddingStart="15sp"
-        android:paddingEnd="40sp"
-        android:textColor="@color/black" />
-
-    <Button
-        android:id="@+id/login"
-        android:layout_width="303dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="40sp"
-        android:layout_marginTop="60sp"
-        android:background="@drawable/login_button"
-        android:text="@string/login"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:textStyle="bold" />
-
-    <androidx.constraintlayout.utils.widget.ImageFilterView
-        android:layout_width="27sp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="-140sp"
-        app:srcCompat="@drawable/img_1" />
-
-    <ImageView
-        android:id="@+id/imageView3"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="-40sp"
-        app:srcCompat="@drawable/img_2" />
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="60sp"
+                android:text="@string/Welcome_Back"
+                android:textColor="#ACACAC"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold" />
 
-</LinearLayout>
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="@dimen/_544sdp"
+                android:layout_height="@dimen/_240sdp"
+                android:layout_marginTop="@dimen/_45sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                app:srcCompat="@drawable/img" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_70sdp"
+                android:text="@string/login"
+                android:textColor="#1300f7"
+                android:textSize="@dimen/_25ssp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/number"
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="@dimen/_49sdp"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_25ssp"
+                android:layout_marginRight="@dimen/_80sdp"
+                android:background="@drawable/button_back_ground"
+                android:hint="@string/your_phon_number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_40ssp"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_40ssp"
+                android:layout_marginTop="@dimen/_60sdp"
+                android:background="@drawable/login_button"
+                android:minWidth="@dimen/_300sdp"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:layout_width="@dimen/_27sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-150dp"
+                app:srcCompat="@drawable/img_1" />
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-40sp"
+                app:srcCompat="@drawable/img_2" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
