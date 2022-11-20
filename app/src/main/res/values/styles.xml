@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.newDesign"  parent="AppBaseTheme2"></style>
+
+    <!--cool theme changes -->
+    <style name="AppBaseTheme2" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorAccent">#1357E1</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="19">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="21">true</item>
+        <item name="android:statusBarColor" tools:targetApi="21">@color/white</item>
+        <item name="android:navigationBarColor" tools:targetApi="21">@color/white</item>
+        <item name="android:windowBackground">@drawable/button_back_ground</item> <!--Dialog transparent-->
+
+        <!--<item name="theme_textColor">@color/default_DkBlue</item>
+        <item name="theme_topBarTitleColor">@color/white</item>
+        <item name="theme_backgroundTopBarColor">@color/default_DkBlue</item>
+        <item name="theme_backArrowColor_disable">@color/ice</item>
+        <item name="theme_backArrowColor">@color/white</item>-->
+
+    </style>
+
+    <!--Dark theme Changes-->
+    <style name="darkAppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorAccent">#1357E1</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="19">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="21">true</item>
+        <item name="android:statusBarColor" tools:targetApi="21">#0442FD</item>
+        <item name="android:navigationBarColor" tools:targetApi="21">#0442FD</item>
+        <item name="android:windowBackground">@drawable/button_back_ground</item> <!--Dialog transparent-->
+
+    </style>
+
+</resources>
