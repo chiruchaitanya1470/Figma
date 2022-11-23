@@ -14,6 +14,14 @@
         layout="@layout/app_bar_nagavation_drawer"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_nagavation"
+        android:layout_gravity="bottom"
+        android:background="#2F65EC"
+        app:menu="@menu/bottom_nagavation"/>-->
+
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
@@ -23,4 +31,8 @@
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_nagavation_drawer"
         app:menu="@menu/activity_main_drawer" />
+
+
+
+
 </androidx.drawerlayout.widget.DrawerLayout>

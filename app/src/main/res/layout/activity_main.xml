@@ -34,7 +34,7 @@
                 android:layout_height="@dimen/_240sdp"
                 android:layout_marginTop="@dimen/_45sdp"
                 android:layout_marginEnd="@dimen/_20sdp"
-                app:srcCompat="@drawable/img" />
+                app:srcCompat="@drawable/consult" />
 
             <TextView
                 android:layout_width="wrap_content"

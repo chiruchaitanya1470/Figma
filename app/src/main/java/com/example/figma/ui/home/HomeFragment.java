@@ -13,23 +13,15 @@ import com.example.figma.databinding.FragmentHomeBinding;
 public class HomeFragment extends Fragment {
 
 private FragmentHomeBinding binding;
+String[] progressBar_data={"search speliestds and doctors","appointments","payments"};
 
     public View onCreateView(@NonNull LayoutInflater inflater,
             ViewGroup container, Bundle savedInstanceState) {
-        HomeViewModel homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
-
-    binding = FragmentHomeBinding.inflate(inflater, container, false);
-    View root = binding.getRoot();
-
-        final TextView textView = binding.textHome;
-        homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+             binding = FragmentHomeBinding.inflate(inflater, container, false);
+             View root = binding.getRoot();
         return root;
+
     }
 
-@Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        binding = null;
-    }
+
 }

@@ -44,7 +44,7 @@ public class details_page extends AppCompatActivity {
         Log.i("Details Page ","Error in ");
 
      countinue.setOnClickListener(view -> {
-         try{
+        /* try{
              Class.forName(driver);
              connection=DriverManager.getConnection(url,user,password);
              Toast.makeText(details_page.this,"connection established",Toast.LENGTH_SHORT).show();
@@ -67,7 +67,7 @@ public class details_page extends AppCompatActivity {
          catch(Exception e){
              dbtext.setText(e.getMessage());
 
-         }
+         }*/
          Intent nagivation=new Intent(getApplicationContext(),nagavation_drawer.class);
          startActivity(nagivation);
 
