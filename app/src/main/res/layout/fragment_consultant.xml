@@ -4,13 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.consultant.consultantFragment"
-    android:orientation="vertical">
+    android:orientation="vertical"
+   >
 
     <TextView
         android:id="@+id/text_consultant"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Hello consultant" />
+        android:text="Hello consultant"
+        android:textSize="@dimen/_25sdp"
+        android:gravity="center"
+        android:layout_gravity="center"/>
 
 
 

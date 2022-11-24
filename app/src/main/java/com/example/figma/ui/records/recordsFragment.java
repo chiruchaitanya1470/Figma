@@ -11,29 +11,24 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.figma.R;
 import com.example.figma.databinding.FragmentHomeBinding;
 
 public class recordsFragment extends Fragment {
 
     private FragmentHomeBinding binding;
-    private RecordsViewModel recordsViewModel;
+
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        recordsViewModel=
-                new ViewModelProvider(this).get(RecordsViewModel.class);
 
-        binding = FragmentHomeBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
+
+        View root = inflater.inflate(R.layout.fragment_records,container,false);
 
         return root;
     }
 
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        binding = null;
-    }
+
 
 }

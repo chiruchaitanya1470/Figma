@@ -5,12 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.helpcenter.help"
+    android:gravity="center"
     android:orientation="vertical">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="this is help center activity"
-        android:textSize="80dp"/>
+        android:textSize="20dp"/>
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="match_parent"
