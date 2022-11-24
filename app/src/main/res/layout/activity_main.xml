@@ -30,29 +30,27 @@
 
             <ImageView
                 android:id="@+id/imageView2"
-                android:layout_width="@dimen/_544sdp"
-                android:layout_height="@dimen/_240sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="271dp"
                 android:layout_marginTop="@dimen/_45sdp"
-                android:layout_marginEnd="@dimen/_20sdp"
-                app:srcCompat="@drawable/consult" />
+                android:layout_marginLeft="@dimen/_50sdp"
+                app:srcCompat="@drawable/img" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_40sdp"
-                android:layout_marginTop="@dimen/_70sdp"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:text="@string/login"
                 android:textColor="#1300f7"
                 android:textSize="@dimen/_25ssp"
                 android:textStyle="bold" />
-
             <EditText
                 android:id="@+id/number"
                 android:layout_width="@dimen/_300sdp"
                 android:layout_height="@dimen/_49sdp"
-                android:layout_marginLeft="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
                 android:layout_marginTop="@dimen/_25ssp"
-                android:layout_marginRight="@dimen/_80sdp"
                 android:background="@drawable/button_back_ground"
                 android:hint="@string/your_phon_number"
                 android:inputType="number"
@@ -63,34 +61,34 @@
 
             <Button
                 android:id="@+id/login"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/_300sdp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_40ssp"
-                android:layout_marginTop="@dimen/_60sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+
                 android:background="@drawable/login_button"
-                android:minWidth="@dimen/_300sdp"
+
                 android:text="@string/login"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_16sdp"
                 android:textStyle="bold" />
 
-            <androidx.constraintlayout.utils.widget.ImageFilterView
-                android:layout_width="@dimen/_27sdp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="-150dp"
-                app:srcCompat="@drawable/img_1" />
 
 
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="-40sp"
-                app:srcCompat="@drawable/img_2" />
 
         </LinearLayout>
 
     </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-644dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/img_2" />
 
 
 </RelativeLayout>

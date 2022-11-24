@@ -5,8 +5,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
     android:orientation="vertical"
     tools:context=".ui.home.HomeFragment">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -17,25 +20,93 @@
             android:layout_height="@dimen/_50sdp"
             android:id="@+id/progress_bar"
             android:layout_marginTop="25dp"
+
+
             android:paddingStart="@dimen/_20sdp"
             android:paddingEnd="@dimen/_20sdp"
-
+            android:progress="50"
             style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
             android:background="@drawable/progress_bar_layout"
             />
 
-        <!--        <ProgressBar
-                    android:id="@+id/progressBar"
-                    style="?android:attr/progressBarStyleHorizontal"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Reason For Consulting"
+            android:textColor="@color/purple_700"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/background_storke">
+
+            <Spinner
+                android:id="@+id/spinner_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textview_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Specialists"
+                    android:textSize="30dp"
+                    android:textColor="@color/purple_700"
+                    android:textStyle="bold"/>
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="55dp"
-                    android:background="@drawable/button_back_ground"/>-->
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/text_2"/>
+
+               <androidx.appcompat.widget.SearchView
+                   android:layout_width="@dimen/_295sdp"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/search_view"
+                   android:layout_marginTop="15dp"
+                   android:clickable="true"
+                   app:queryHint="Search Specialists,Doctors"
+                   android:background="@drawable/background_storke"/>
+
+                <ListView
+                    android:id="@+id/list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="410dp" />
 
 
+
+            </LinearLayout>
+        </ScrollView>
 
 
     </LinearLayout>
+
+
+
 
 
 

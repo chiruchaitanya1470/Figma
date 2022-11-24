@@ -1,7 +1,5 @@
 package com.example.figma.ui.consultant;
 
-import androidx.lifecycle.ViewModelProvider;
-
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -12,11 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Spinner;
-import android.widget.TextView;
 
 import com.example.figma.R;
-import com.example.figma.databinding.FragmentHomeBinding;
-import com.example.figma.ui.home.HomeViewModel;
 
 public class consultantFragment extends Fragment {
 
